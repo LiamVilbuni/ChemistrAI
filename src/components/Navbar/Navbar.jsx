@@ -82,13 +82,13 @@ const Navbar = () => {
             </div>
 
             <div className='navbar__color-mode'>
-                <Image src={assets.sun} alt="Light Mode" height={32} width={32} className='navbar__color-mode-icon' id='dark-mode' />
-                <Image src={assets.moon} alt="Dark Mode" height={32} width={32} className='navbar__color-mode-icon' id='light-mode' />
+                <Image src={assets.sun} alt="Light Mode" height={32} width={32} priority={true} className='navbar__color-mode-icon' id='dark-mode' />
+                <Image src={assets.moon} alt="Dark Mode" height={32} width={32} priority={true} className='navbar__color-mode-icon' id='light-mode' />
             </div>
 
             <div className='navbar__auth'>
-                <a href="/auth/signin" className="navbar__auth-link">Sign In</a>
-                <a href="/auth/signup" className="navbar__auth-link navbar__auth-link--signup">Sign Up</a>
+                <a href="/auth/login" className="navbar__auth-link" id="navbar__auth-link-login">Login</a>
+                <a href="/auth/signup" className="navbar__auth-link" id="navbar__auth-link-signup">Sign Up</a>
             </div>
         </div>
     )
