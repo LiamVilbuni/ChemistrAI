@@ -1,0 +1,26 @@
+#navbar__link-features {
+    color: var(--color-accent);
+}
+
+.features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.features__content h1{
+    color: var(--color-text-primary);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.features__content ul{
+    color: var(--color-text-secondary);
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: left;
+    gap: 20px; 
+}

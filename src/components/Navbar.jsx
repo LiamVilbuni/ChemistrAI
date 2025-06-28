@@ -30,7 +30,7 @@ const Navbar = () => {
             document.getElementById('light-mode').style.display = 'block';
             document.getElementById('dark-mode').style.display = 'none';
         } else {
-            root.style.setProperty('--color-primary', '#00B4D8');
+            root.style.setProperty('--color-primary', '#E50914');
             root.style.setProperty('--color-secondary', '#B5179E');
             root.style.setProperty('--color-accent', '#3EF8C1');
             root.style.setProperty('--color-background', '#0B0F18');
@@ -75,8 +75,8 @@ const Navbar = () => {
 
                 <div className="navbar__links">
                     <ul>
-                        <li><a href="/about" className="navbar__link">About</a></li>
-                        <li><a href="/features" className="navbar__link">Features</a></li>
+                        <li><a href="/about" className="navbar__link" id="navbar__link-about">About</a></li>
+                        <li><a href="/features" className="navbar__link" id="navbar__link-features">Features</a></li>
                     </ul>
                 </div>
             </div>

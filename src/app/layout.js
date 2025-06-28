@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             
             @media (prefers-color-scheme: dark) {
               :root {
-                --color-primary: #00B4D8;         /* Dark Lab Blue */
+                --color-primary: #E50914;         /* Dark Lab Blue */
                 --color-secondary: #B5179E;       /* Dark Plasma Purple */
                 --color-accent: #3EF8C1;          /* Neon Mint */
                 --color-background: #0B0F18;      /* Dark Fog White */
