@@ -1,4 +1,5 @@
 // 'use server';
+
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import React from 'react';
@@ -19,12 +20,10 @@ export default async function login(req, res) {
     return res.status(401).json({ message: 'User not found' });
   }
 
-  // Compare password
   const isValid = await bcrypt.compare(password, user.password);
   if (!isValid) {
     return res.status(401).json({ message: 'Invalid credentials' });
   }
-  // Create a JWT token
   const token = jwt.sign({ email: user.email }, 'your_secret_key', { expiresIn: '1h' });
   return res.status(200).json({ token });
 }
