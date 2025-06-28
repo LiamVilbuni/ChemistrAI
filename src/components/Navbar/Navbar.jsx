@@ -1,5 +1,5 @@
 'use client';
-import '@/styles/Navbar.css';
+import './Navbar.css';
 import assets from '@/assets/assets';
 import Image from 'next/image';
 import React from 'react';

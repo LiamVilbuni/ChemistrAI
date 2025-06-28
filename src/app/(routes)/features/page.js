@@ -1,13 +1,13 @@
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/Navbar/Navbar';
 import '@/app/globals.css';
-import '@/styles/features.css';
+import './features.css';
 
 export default function Features() {
   return (
     <>
       <Navbar />
       <div className="features__container">
-        <div className = "features__content">
+        <div className="features__content">
           <h1 id="features__title">ChemistrAI currently supports the following features: </h1>
           <ul>
             <li>AI-driven chemical property & reaction predictions</li>
