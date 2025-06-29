@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import './login.css';
 import { redirect } from 'next/dist/server/api-utils';
 
-export default function login() {
+export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
